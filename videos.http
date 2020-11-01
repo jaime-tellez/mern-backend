@@ -1,0 +1,27 @@
+@api = http://localhost:5000
+
+GET  {{api}}/videos
+
+###
+GET  {{api}}/videos/1
+
+###
+POST  {{api}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=Sha9IJGuTCg",
+  "title": "Deno API ",
+  "description": "Api Rest con Node y Express"
+}
+
+###
+DELETE  {{api}}/videos/5f951f53b6a90a8d481e5318
+
+###
+PUT  {{api}}/videos/5f9521af4f52228db9450fe6
+Content-Type: application/json
+
+{
+  "title": "Título actualizado"
+}
