@@ -3,8 +3,7 @@
   "builds": [{ "src": "dist/index.js", "use": "@now/node" }],
   "routes": [
     {
-      "src": "/videos",
-      "methods": ["GET"],
+      "src": "/.*",
       "dest": "/dist/index.js"
     }
   ]
