@@ -8,9 +8,9 @@ import config from "./config";
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
-      // authSource: "admin",
-      // user: config.MONGO_USER,
-      // pass: config.MONGO_PASSWORD,
+      authSource: "admin",
+      user: config.MONGO_USER,
+      pass: config.MONGO_PASSWORD,
     };
 
     const db = await mongoose.connect(
