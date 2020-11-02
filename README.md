@@ -24,8 +24,16 @@ Ejecutar el siguiente comando para despliegue local:
   }
 ```
 
-3. Configurar script para iniciar la app con ts-node, package.json
+3. Configurar script para iniciar la app con node, package.json
 
 ```json
 "start": "node dist/index.js",
 ```
+
+## Variable de entorno mongodb en Heroku
+
+MongoDB Atlas: [MongoDB Atlas](https://cloud.mongodb.com)
+
+1. Ingresar al proyecto en la pestaña de `settings` ir a la opción de `Config Vars` y dar clic en el botón de `Reveal Config Vars` y allí agregar la variable `MONGO_DATABASE_URL`.
+2. Si la base de datos está en MongoDB Atlas, debería tener una estructura similar a esta:
+   `mongodb+srv://user:<password>@cluster0.v333.mongodb.net/<database_name>?retryWrites=true&w=majority`
