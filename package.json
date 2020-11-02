@@ -7,7 +7,8 @@
     "start": "ts-node dist/index.ts",
     "build": "tsc",
     "dev": "ts-node-dev src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
