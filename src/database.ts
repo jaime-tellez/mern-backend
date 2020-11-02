@@ -8,13 +8,10 @@ import config from "./config";
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
-      authSource: "admin",
-      user: config.MONGO_USER,
-      pass: config.MONGO_PASSWORD,
     };
 
     const db = await mongoose.connect(
-      `mongodb://${config.MONGO_HOST}/${config.MONGO_DATABASE}`,
+      `${config.MONGO_DATABASE_URL}`,
       mongooseOptions
     );
     console.log("Database is connected to:", db.connection.name);
