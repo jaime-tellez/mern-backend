@@ -27,5 +27,5 @@ Ejecutar el siguiente comando para despliegue local:
 3. Configurar script para iniciar la app con ts-node, package.json
 
 ```json
-"start": "ts-node src/index.ts",
+"start": "node dist/index.js",
 ```
