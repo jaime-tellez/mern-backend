@@ -1,16 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "dist/*.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "builds": [{ "src": "dist/index.js", "use": "@now/node-server" }],
   "routes": [
     {
       "src": "/videos",
       "methods": ["GET"],
-      "dest": "/videos"
+      "dest": "/dist/index.js"
     }
   ]
 }
