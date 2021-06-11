@@ -11,7 +11,7 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 # TypeScript
-RUN npm run tsc
+RUN npm run build
 
 EXPOSE 3000
-CMD [ "npm", "start" ]
+CMD [ "npm", "./dist/main.js" ]
