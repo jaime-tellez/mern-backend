@@ -3,6 +3,7 @@ application:
   project: project-account
   organization: QoveryCommunity
   publicly_accessible: true
+  port: 3000
 routers:
 - name: main
   routes:
