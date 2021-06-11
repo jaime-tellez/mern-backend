@@ -4,7 +4,7 @@ application:
   organization: QoveryCommunity
   publicly_accessible: true
 routers:
-- name: main-mern-backend
+- name: main
   routes:
   - application_name: mern-backend
     paths:
