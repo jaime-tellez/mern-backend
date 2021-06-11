@@ -10,6 +10,8 @@ RUN npm install
 
 # Bundle app source
 COPY . /usr/src/app
+# TypeScript
+RUN npm run tsc
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
