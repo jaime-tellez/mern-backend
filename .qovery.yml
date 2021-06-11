@@ -1,12 +1,11 @@
----
 application:
-  name: "mern-backend"
-  project: "project-account"
-  organization: "QoveryCommunity"
+  name: mern-backend
+  project: project-account
+  organization: QoveryCommunity
   publicly_accessible: true
 routers:
-- name: "main-mern-backend"
+- name: main-mern-backend
   routes:
-  - application_name: "mern-backend"
+  - application_name: mern-backend
     paths:
-    - "/*"
+    - /
