@@ -3,10 +3,6 @@ application:
   name: "mern-backend"
   project: "project-account"
   organization: "QoveryCommunity"
-databases:
-- type: "MONGODB"
-  name: "videos"
-  version: "4.4"
 routers:
 - name: "main-mern-backend"
   routes:
