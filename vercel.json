@@ -3,9 +3,9 @@
   "version": 2,
   "name": "mern-backend",
   "builds": [
-    { "src": "dist/app.js", "use": "@vercel/node" }
+    { "src": "dist/*.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "^/(.*)", "dest": "/dist/app.js" }
+    { "src": "^/(.*)", "dest": "/dist/*.js" }
   ]
 }
